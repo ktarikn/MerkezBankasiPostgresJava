@@ -2,6 +2,7 @@ package com.example.isBankasiDbApp;
 
 //Currency format from Turkey's central bank
 public class Currency { //class to hold exchange rate data
+
     private float rate_buy;
     private float rate_sell;
     private float effective_rate_buy;
@@ -15,6 +16,7 @@ public class Currency { //class to hold exchange rate data
         this.effective_rate_sell = effective_rate_sell;
         this.code = code;
     }
+
 
     public float getEffective_rate_buy() {
         return effective_rate_buy;

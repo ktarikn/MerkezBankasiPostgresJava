@@ -12,6 +12,7 @@ import java.util.ArrayList;
 @Service
 public class DisplayFactory {
 
+
     private DbManager dbManager;
     private Currency[] rates;
     public DisplayFactory() {
@@ -41,6 +42,7 @@ public class DisplayFactory {
         dbManager.update(buy,sell,ebuy,esell,kod);
         return menu();
     }
+
     public RateRecord[] addRate(String kod, float buy, float sell, float ebuy, float esell){
         dbManager.add(buy,sell,ebuy,esell,kod);
         return menu();

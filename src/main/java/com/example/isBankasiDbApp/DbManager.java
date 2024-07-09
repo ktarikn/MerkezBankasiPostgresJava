@@ -218,7 +218,7 @@ public class DbManager {
             dao = new UserDao(con);
             u = dao.getUserWithUsername(username);
         } catch (SQLException e) {
-            System.err.println("adafafa");
+            System.err.println("Could not get user, check your database access");
             throw new RuntimeException(e);
         }
 
